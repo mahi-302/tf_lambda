@@ -1,6 +1,7 @@
 provider "aws" {
   region = "us-east-2"
 }
+
 resource "aws_iam_role" "test_lambda" {
   name = "test_lambda"
   
