@@ -1,7 +1,11 @@
 provider "aws" {
   region = "us-east-2"
 }
-
+terraform {
+  required_providers {
+    archive = "~> 1.3"
+  }
+}
 resource "aws_iam_role" "test_lambda" {
   name = "test_lambda"
   
