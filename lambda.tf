@@ -1,6 +1,7 @@
 provider "aws" {
   region = "us-east-2"
 }
+
 terraform {
   required_providers {
     archive = "~> 1.3"
